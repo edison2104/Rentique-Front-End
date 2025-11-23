@@ -10,112 +10,117 @@
 body{font-family: 'Georgia', serif;margin:0;color:#222}
 
 .topbar{background:var(--nav-bg);border-bottom:2px solid var(--nav-border);position:sticky;top:0;z-index:30}
-.topbar-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+.topbar-inner{max-width:1200px;margin:0 206px 0 320px;display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
 .logo-wrap{display:flex;align-items:center;gap:14px}
 .logo-mark{width:54px;height:54px;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center}
 .logo-mark img{width:100%;height:100%;object-fit:cover}
-.site-name{font-family: 'Times New Roman', serif;font-size:34px;letter-spacing:2px}
+.site-name{font-family: 'Baskervville', serif;font-size:40px;letter-spacing:3px;text-shadow: 2px 2px 4px rgba(0,0,0,0.25)}
 
-.topnav ul{display:flex;gap:60px;list-style:none;margin:0;padding:0}
-.topnav li{font-family:'Outfit',sans-serif;color:#111;font-size:15px; font-weight: 700}
+.topnav ul{display:flex;gap:80px;list-style:none;margin:0;padding:0}
+.topnav li{font-family:'Inter',sans-serif;color:#111;font-size:14px;font-weight:600;cursor:pointer}
 
-.auth .pill{border:0;padding:8px 16px;border-radius:22px;cursor:pointer;margin-left:8px}
-.pill.yellow{background:var(--accent);color:#111}
-.pill.blue{background:#16356a;color:#fff}
+.auth{display:flex;align-items:center;gap:16px}
+.auth .pill{border:0;padding:12px 28px;border-radius:24px;cursor:pointer;font-family:'Outfit',sans-serif;font-weight:600;font-size:16px;transition:transform 0.2s ease,box-shadow 0.2s ease}
+.auth .pill:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,0.15)}
+.pill.yellow{background:#e6c36a;color:#111}
+.pill.blue{background:#1a3a5f;color:#fff}
 
-.hero{background:var(--navy);color:#fff;padding-top:12px}
-.hero-inner{max-width:1200px;margin:0 auto;display:flex;gap:40px;align-items:center;padding:72px 20px}
-.hero-left{flex:1;max-width:640px;padding-left:80px}
-.hero-right{width:420px;display:flex;align-items:flex-start;justify-content:flex-end}
+.hero{background:var(--navy);color:#fff;padding:80px 0 100px 0}
+.hero-inner{max-width:1400px;margin:0 auto;display:flex;gap:80px;align-items:center;padding:0 80px}
+.hero-left{flex:1;max-width:800px}
+.hero-right{flex:0 0 500px;display:flex;align-items:center;justify-content:center}
 
-.hero-logo{font-family: 'Baskervville SC', serif;font-size:64px;color:#e9eef6;margin:0 0 30px;letter-spacing:2px;display:flex;align-items:baseline;gap:6px}
-.hero-logo .hero-R{font-size:90px;line-height:1;display:inline-block;color:#e9eef6}
-.hero-logo .hero-rest{font-size:48px;letter-spacing:3px;display:inline-block;color:#e9eef6}
-.hero-title{font-family: 'Outfit', sans-serif;font-weight:700;font-size:28px;line-height:1.35;margin:0 0 30px;color:#fff;letter-spacing:0.2px}
-.hero-desc{font-family: 'Outfit', sans-serif;font-size:20px;max-width:560px;color:#dbe6f1;line-height:1.9;letter-spacing:0.28px}
+.hero-logo{font-family: 'Baskervville', serif;font-size:70px;color:#fff;margin:0 0 35px;letter-spacing:2px;font-weight:400;line-height:1}
+.hero-logo .hero-R{font-size:60px;line-height:1;display:inline-block;color:#fff}
+.hero-logo .hero-rest{font-size:40px;letter-spacing:3px;display:inline-block;color:#fff}
+.hero-title{font-family: 'Outfit', sans-serif;font-weight:700;font-size:33px;line-height:1;margin:0 0 25px;color:#fff;letter-spacing:0.5px}
+.hero-desc{font-family: 'Outfit', sans-serif;font-size:22px;max-width:100%;color:#fff;line-height:1.3;word-spacing:2px;text-align:justify;margin: 35px 0 25px 0}
 
-.hero-note{font-family: 'Outfit', sans-serif;margin-top:22px;color:#dbe6f1;font-size:20px}
+.hero-note{font-family: 'Outfit', sans-serif;margin-top:35px;margin-bottom:35px;color:#fff;font-size:22px;line-height:1.3;word-spacing: 2px}
 
-.hero-actions{margin-left: 50px;margin-top:26px;display:flex;align-items:center;gap:20px}
-.hero-left .link-cta{margin-left:8px}
-.btn-outline{background:#e9e7e6;border-radius:24px;padding:14px 24px;border:0}
-.link-cta{color:#fff;border-bottom:2px solid rgba(255,255,255,0.15);padding-bottom:4px}
+.hero-actions{margin-left:70px;margin-top:0;display:flex;align-items:center;gap:70px}
+.hero-left .link-cta{margin-left:0}
+.btn-outline{background:#e9e7e6;border-radius:28px;padding:14px 30px;border:0;font-family:'Outfit',sans-serif;font-size:20px;color:#111;cursor:pointer;font-weight:400;text-decoration:none;display:inline-block}
+.link-cta{color:#fff;text-decoration:underline;font-family:'Outfit',sans-serif;font-size:20px;font-weight:700;cursor:pointer}
 
-.dress-placeholder{position:relative;width:420px;height:520px}
-.placeholder-box{position:absolute;right:0;bottom:-20px;width:360px;height:520px;background:linear-gradient(180deg,#fff,#f6f6f6);border-radius:22px;display:flex;align-items:center;justify-content:center;color:#666;font-weight:700}
+.dress-placeholder{position:relative;width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.placeholder-box{width:100%;max-width:420px;height: 650px;;aspect-ratio:3/4;background:#fff;border-radius:24px;display:flex;align-items:center;justify-content:center;color:#999;font-weight:600;font-size:18px;box-shadow:0 10px 40px rgba(0,0,0,0.15)}
 
-.mission{background:#e9e9e9;padding:60px 20px}
-.mission-inner{max-width:1200px;margin:0 auto;display:flex;gap:36px;align-items:flex-start;position:relative;padding:0 20px}
+.mission{background:#e3e3e3;padding: 50px 20px 100px 20px}
+.mission-inner{max-width:1400px;margin:0 auto;display:flex;gap:80px;align-items:center;position:relative;padding:0 40px}
 
 /* section title centered above the two columns */
-.mission-title{width:100%;text-align:center;font-family: 'Baskervville SC', serif;font-size:45px;margin:0 0 40px;color:#0b233a}
+.mission-title{width:100%;text-align:center;font-family: 'Baskervville', serif;font-size:50px;margin:0 0 60px;color:#0b233a;font-weight:400}
 
-.mission-image{flex:1;min-width:0;padding-left:80px}
-.mission-photo-img{width:100%;height:597px;object-fit:cover;border-radius:18px;display:block;box-shadow:0 10px 18px rgba(0,0,0,0.12);border:6px solid #e9e9e9}
+.mission-image{flex:0 0 650px}
+.mission-photo-img{width:100%;height:627px;object-fit:cover;border-radius:30px;display:block;box-shadow:0 15px 40px rgba(0,0,0,0.2)}
 
 /* blue content card to the right: fixed width to match reference */
 .mission-content {
-  flex: 0 0 540px;
-  background: #16356a;
+  flex: 1;
+  max-width: 650px;
+  background: #163376;
   color: #fff;
-  padding: 48px 44px;
-  border-radius: 22px;
-  box-shadow: 0 10px 18px rgba(0,0,0,0.12);
-  min-height: 520px;
+  padding: 60px 55px;
+  border-radius: 32px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  min-height: 600px;
   text-align: left;
-  margin: 0 auto; /* Center the content */
 }
 
 .mission-content h2{display:none} /* heading moved above */
 .mission-intro {
   font-family: 'Outfit', sans-serif;
-  margin: 10px 0 10px 28px;
-  color: rgba(255, 255, 255, 0.92);
-  font-size: 17px;
+  margin: 0 0 30px 0;
+  color: #fff;
+  font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.16px;
+  word-spacing: 1.5px;
+  text-align: justify;
+  font-weight: 200;
 }
 .mission-bold {
   font-family: 'Outfit', sans-serif;
-  font-size: 15px;
-  font-weight: 800;
-  margin: 12px 0 14px 28px;
+  font-size: 20px;
+  font-weight: 900;
+  margin: 40px 0 10px 0;
+  word-spacing: 1px;
   line-height: 1.2;
+  text-align: justify;
 }
 .mission-list {
   list-style: none;
-  padding-left: 28px;
-  margin-top: 8px;
+  padding-left: 0;
+  margin-top: 10px;
 }
 .mission-list li {
   font-family: 'Outfit', sans-serif;
   position: relative;
-  padding-left: 28px;
-  margin-bottom: 14px;
-  font-size: 15px;
-  line-height: 1.6;
-  font-weight: 800;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 900;
+  text-align: justify;
 }
 .mission-list li:before {
   font-family: 'Outfit', sans-serif;
   content: "\2022";
   position: absolute;
   left: 0;
-  top: 0;
+  top: 2px;
   color: #fff;
   font-size: 20px;
   line-height: 1;
 }
 
-.mission-content{display:flex;flex-direction:column;align-items:flex-start}
-.mission-content p, .mission-content ul{max-width:400px}
+.mission-content p, .mission-content ul{max-width:100%}
 
-.hero{position:relative;overflow:visible}
+.hero{position:relative;overflow:visible;box-shadow:0 15px 30px rgba(0,0,0,0.15)}
 .hero::after{
-  
   content:"";
-  position:absolute;left:0;right:0;bottom:-36px;height:36px;
-  background:linear-gradient(to bottom, #0b233a 0px, #0b233a 2px, #e6e6e6 2px, #e6e6e6 100%);
+  position:absolute;left:0;right:0;bottom:0;height:0;
+  background:transparent;
 }
 .category-nav {
   background: linear-gradient(90deg, #d6d6d6 0%, #8f8f8f 100%);
@@ -370,63 +375,79 @@ body{font-family: 'Georgia', serif;margin:0;color:#222}
   z-index: 1;
 }
 
+/* Footer top gold section */
+.footer-top {
+  background: #e6c36a;
+  height: 60px;
+  
+  position: relative;
+  z-index: 5;
+}
+
 /* Footer styles */
 .footer {
-  background: #e9e9e9;
-  padding: 40px 0;
-  border-top: 4px solid #888;
+  background: #d9d9d9;
+  padding: 70px 0 150px 0;
   font-family: 'Outfit', sans-serif;
   text-align: left;
 }
 .footer-inner {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 150px;
   align-items: flex-start;
-  justify-content: space-between;
+  padding: 0 120px 0 275px;
 }
 .footer-brand {
-  flex: 1 1 220px;
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-right: 40px;
-  padding-left: 80px;
 }
 .footer-logo {
-  font-family: 'Outfit', serif;
-  font-size: 38px;
+  font-family: 'Baskervville', serif;
+  font-size: 40px;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   letter-spacing: 1px;
+  color: #111;
 }
 .footer-social {
   display: flex;
-  gap: 18px;
-  font-size: 28px;
-  margin-bottom: 24px;
+  gap: 14px;
 }
-.footer-icon {
-  font-family: 'FontAwesome', 'Outfit', sans-serif;
-  font-style: normal;
-  font-weight: 400;
+.social-icon {
+  width: 36px;
+  height: 36px;
+  background: #111;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-icon img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
 }
 .footer-cols {
-  flex: 3 1 600px;
+  flex: 1;
   display: flex;
-  gap: 60px;
+  gap: 140px;
   justify-content: flex-start;
-  margin: 70px 0 0 100px;
+  margin-top: 70px;
 }
 .footer-col {
-  min-width: 180px;
+  flex: 0 0 auto;
 }
 .footer-col-title {
+  font-family: 'Outfit', sans-serif;
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;;
+  color: #111;
 }
 .footer-col ul {
   list-style: none;
@@ -434,9 +455,12 @@ body{font-family: 'Georgia', serif;margin:0;color:#222}
   margin: 0;
 }
 .footer-col li {
-  font-size: 18px;
-  margin-bottom: 14px;
-  color: #222;
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #111;
+  font-weight: 400;
+  letter-spacing: 1.5px;
 }
 
 @media (max-width: 900px) {
